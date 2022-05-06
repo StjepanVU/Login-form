@@ -1,0 +1,83 @@
+<mvc:View
+    controllerName="ns.loginform.controller.Login"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:u="sap.ui.unified"
+    xmlns:core="sap.ui.core"
+	height="100%"
+    
+>
+    <Page id="login-page" showHeader="false"> 
+        <content>
+            <Panel class="login-window">
+            
+            <HBox class="banner" justifyContent="Center">
+                <Image width="100%" height="100%" src="data:image/png;base64,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"/>
+            </HBox>
+            <VBox class="text-box">
+                <Text class="sign-in-text" text="SIGN IN"/>
+                <Text class="intro-text" text="Enter your credentials to access your account"/>
+            </VBox>
+
+                    <f:Form>
+                        <f:layout>
+                            <f:ResponsiveGridLayout
+                                labelSpanXL="3"
+                                labelSpanL="3"
+                                labelSpanM="3"
+                                labelSpanS="12"
+                                adjustLabelSpan="false"
+                                emptySpanXL="2"
+                                emptySpanL="3"
+                                emptySpanM="3"
+                                emptySpanS="3"
+                                columnsXL="1"
+                                columnsL="1"
+                                columnsM="1"
+                                singleContainerFullSize="false" />
+                        </f:layout>
+                    
+                        <f:FormContainer>
+                            <f:formElements>
+                            <!--EMAIL-->
+                                <f:FormElement>
+                                    <f:fields>
+                                        <Label text="Email"/>
+                                        <Input id="email" required="true" placeholder="Enter your email " value="" />
+                                    </f:fields>
+                                </f:FormElement>
+                            <!--PASSWORD-->    
+                                <f:FormElement>
+                                    <f:fields>
+                                        <Label text="Password"/>
+                                        <Input type="Password" id="password" placeholder="Enter your password" required="true" value="" />                                   
+                                    </f:fields>
+                                </f:FormElement>
+                            <!--BUTTON-->    
+                                <f:FormElement>
+                                <f:fields>                                
+                                <Button class="login-button" text="SIGN IN" type="Unstyled" press="onSignInPress">
+                                </Button>
+                                </f:fields>
+                                </f:FormElement>
+                            
+                            </f:formElements>
+                        </f:FormContainer>
+                    </f:Form>
+                    <!--FORGOT PASSWORD-->
+                    <HBox class="forgot-password" justifyContent="Center">
+                        <Text text="Forgot your password? "/>
+                        <Link
+                            class="reset-password"
+                            text="Reset Password"
+                            target="_blank"
+                            href="http://www.sap.com"
+                        />
+                    </HBox>
+            
+            </Panel>
+        </content>
+    </Page>
+</mvc:View>
